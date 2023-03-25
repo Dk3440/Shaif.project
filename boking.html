@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="navbar">
+        <div class="logo">
+            <img src="./image/logo.svg" alt="">
+        </div>
+        <ul id="block">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="">About</a></li>
+            <li><a href="">Menu</a></li>
+            <li><a href="">Contact</a></li>
+            <button id="btn"><a href="boking.html" id="bt"> Book Table </a></button>
+        </ul>
+    </div>
+    <section>
+        <div class="container11" >
+            <p id="f1">Book Table</p>
+            <div class="form-wrap">
+
+                <form onsubmit="return validation()">
+                    <div class="form-group">
+                        <label>First Name</label>
+                        <input type="text"  id="firstname"><b><span id="usererror" style="color: red;"></span></b>
+                    </div>
+                    <div class="form-group">
+                        <label for="">Last Name</label>
+                        <input type="text" name="" id="lastname"><b><span id="lasterror" style="color: red;"></span></b>
+                    </div>
+                    <div class="form-group">
+                        <label>EmailAdd</label>
+                        <input type="email"  id="Email" ><b><span  id="emailerror" style="color: red;"></span></b>
+                    </div>
+                    <div class="form-group">
+                        <label for="">Table Type</label>
+                        <select name="" id="tabletype">
+                            <option value="">Choose</option>
+                            <option value="">Mumbai</option>
+                            <option value="">Mumbai</option>
+                            <option value="">Mumbai</option>
+                        </select>
+                        <b><span id="tablerror" style="color: red;"></span></b>
+                    </div>
+                    <div class="form-group">
+                        <label>Mobile number</label>
+                        <input type="text" name="" id="number"><b><span id="phoneerror" style="color: red;"></span></b>
+                    </div>
+                    <div class="form-group">
+                        <label for="">Table Type</label>
+                        <select name="" id="placement">
+                            <option value="">Choose</option>
+                            <option value="">Mumbai</option>
+                            <option value="">Mumbai</option>
+                            <option value="">Mumbai</option>
+                        </select>
+                        <b><span id="palceerror" style="color: red;"></span></b>
+                    </div>
+                    <div class="form-group">
+                        <label for="">Date</label>
+                        <input type="date" name="" id="dat"><b><span id="dateerror" style="color: red;"></span></b>
+                    </div>
+                    <div class="form-group">
+                        <label for="">time</label>
+                        <input type="time" name="" id="time"><b><span id="timeerror" style="color: red;"></span></b>
+                    </div>
+                    <div class="form-group-full">
+                        <label for="" id="o1">Note</label>
+                        <textarea name="" id="note" rows="4"></textarea><b><span id="noteerror" style="color: red;"></span></b>
+                    </div>
+                    <!-- <button type="submit" class="table">Book Table</button> -->
+                    <input type="submit" class="table" style="background-color: blue; color: white;">
+                </form>
+            </div>
+        </div>
+    </section>
+</body>
+ 
+</html>
+<script src="main.js"></script>
